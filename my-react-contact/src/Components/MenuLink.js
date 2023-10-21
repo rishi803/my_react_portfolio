@@ -27,7 +27,7 @@ const MenuLink = [
   {
     id: 6,
     hyper_link: "#contact",
-    link_name: "Contact Us",
+    link_name: "Contact",
   },
 ];
 

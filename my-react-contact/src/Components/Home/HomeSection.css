@@ -1,6 +1,24 @@
 .home{
-    height: calc(100vh - 3rem);
-    row-gap: 1rem;
+    max-height: calc(100vh - 3rem);
+    /* row-gap: 1rem; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.left{
+    width:45%;
+    padding-top: 4rem;
+    /* padding-left: 3rem; */
+    /* text-align: center; */
+}
+
+.right{
+    width: 55%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home_data{
@@ -19,7 +37,10 @@
 
 .homeSocial{
     display: flex;
-    flex-direction: column;
+    /* position: relative; */
+    margin-top: 3.4rem;
+    gap: 1rem;
+    /* flex-direction: column; */
 }
 
 .homeSocial a{
@@ -37,13 +58,14 @@
 
 .home_img{
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 295px;
+    margin:auto;
+    top: 5.5rem;
+    height: 100%;
 }
 
 .home_img .profileImg{
     width: 100%;
+    box-sizing: border-box;
 }
 
 .circleOne{
@@ -160,11 +182,12 @@
 }
 
 .box.box2{
-    bottom: 25%;
+    bottom: 35%;
     left: 0;
 }
 
 .button{
+    text-align: center;
     display: inline-block;
     color: #fff;
     padding: .75rem 2.5rem;
@@ -180,32 +203,45 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.profileImg{
+    max-width: 300px;
+}
+
 
 @media screen and (min-width: 768px){
-    .home{
+    /* .home{
         height: 100vh;
-    }
+    } */
 
-    .home_data{
-        align-self: flex-end;
-    }
 
-    .homeSocial{
+    /* .homeSocial{
         padding-top: 0;
-        padding-bottom: 2.5rem;
+        padding: 2.5rem;
         flex-direction: row;
         align-self: flex-end;
+    } */
+
+    .homeSocial{
+        /* display: flex; */
+        /* position: relative; */
+        margin-top: 3.2rem;
+        gap:2.5rem;
+        /* gap: 1rem; */
+        /* flex-direction: column; */
     }
 
     .homeSocial a{
-        margin-bottom: 0;
-        margin-right: var(--mb-4);
+        /* margin-left: var(--mb-3); */
+        /* margin-right: var(--mb-3); */
+        display: flex;
+       
     }
 
-    .home_img{
-        width: 457px;
-        bottom: 0%;
-    }
+    /* .home_img{ */
+        /* width: 457px; */
+        /* bottom: 0%; */
+        /* margin:auto; */
+    /* } */
 
     .home_img .profileBg{
         width: 400px;
@@ -213,7 +249,7 @@
     }
 
     .home_img .profileImg{
-        width: 400px;
+        max-width: 400px;
     }
 
     .smiley{
@@ -247,10 +283,31 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-    .home__img{
+@media screen and (min-width: 1100px){
+    /* .home__img{
         right: 10%;
+    } */
+    .home_data{
+        padding: 3rem;
+       text-align: center;
+    }
+    
+    .homeSocial{
+        display: flex;
+        justify-content:center;
+        margin-top:1.2rem;
     }
   }
+
+ @media screen and (max-width:500px) {
+    .box {
+        display: none;
+    }
+
+    .profileImg{
+        /* width:300px; */
+        height: 300px;
+    }
+ }
 
 

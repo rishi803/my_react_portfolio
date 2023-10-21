@@ -9,3 +9,9 @@ main{
     z-index: -1;
 }
 
+.main-body{
+    position: relative;
+    left:5%;
+    width:90%;
+    backdrop-filter: blur(40px);
+}

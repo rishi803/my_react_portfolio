@@ -1,0 +1,12 @@
+.serviceImage{
+    /* background-color: rgba(26, 8, 160, 0.4); */
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.service_Box1{
+    width:max-content;
+    border: 2px solid green;
+}

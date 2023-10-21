@@ -24,20 +24,24 @@ function HomeSection() {
       .from('.homeSocial a',{y:160,opacity:0,stagger:0.1,duration:0.8,ease:"back.out(1.7)"},'Start')
   },[]);
   return (
-    <section className="home section bd_grid" id="home">
+    <section className="section bd_grid" id="home">
       <div className="circle circleOne"></div>
       <div className="circle circleTwo"></div>
       <div className="circle circleThree"></div>
+    
+    <div className="home">
+      <div className="left">
+      
       <div className="home_data">
         <h1 className="home_title">
-          Hi, I'am <br /> <span>Rishi Singh</span><br /> Web Designer || Programmer
+          Hi, I'am <br /> <span>Rishi Singh</span><br /> Web Designer & Programmer
         </h1>
 
-        <a href="https://drive.google.com/file/d/1ARsS6FfYSC7r1wtZ-ig3pxrHZRyEKMAh/view?usp=sharing" className="button">
+        <a href="https://drive.google.com/file/d/1NkrBwjuxHTUhEzhlhJprB2qyvVtOmib9/view?usp=sharing" className="button">
           Download Resume
         </a>
-      </div>
-
+    
+</div>
       <div className="homeSocial">
         {HomeSocial &&
           HomeSocial.map((social) => (
@@ -46,7 +50,8 @@ function HomeSection() {
             </a>
           ))}
       </div>
-
+      </div>
+      <div className="right">
       <div className="home_img">
         <img src={LadyImage} alt="" className="profileImg" />
         <img src={LadyBgPath} alt="" className="profileBg" />
@@ -75,6 +80,8 @@ function HomeSection() {
             <p>Type some content over here</p>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </section>
   );

@@ -1,7 +1,8 @@
 import React,{useEffect} from "react";
 import "./MainContainer.css";
 import Home from "./Home/HomeSection";
-import Education from "./Services/ServicesSection";
+import Service from "./Services/ServicesSection";
+import Education from "./Education/Educationsec";
 import Work from "./Work/WorkSection";
 import Abouts from "./About/AboutSection";
 import Projects from "./Projects/ProjectSection";
@@ -22,9 +23,11 @@ function MainContainer() {
   return (
     <main>
       {/* Home Section */}
+      <div className="main-body">
       <Home />
+      <Education/>
       {/* Service Section */}
-      <Education />
+      {/* <Service /> */}
       {/* Work Section */}
       <Work />
       {/* About Section */}
@@ -35,6 +38,8 @@ function MainContainer() {
       {/* Contact Section */}
       <Contact />
 
+      </div>
+      
       <Footer />
     </main>
   );

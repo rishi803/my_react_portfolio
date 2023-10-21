@@ -5,7 +5,7 @@ header{
     left: 0;
     z-index: var(--z-fixed);
     background-color: rgba(95, 110, 116,0.8);
-    box-shadow: 0 1px 4px rgba(209, 105, 14, 0.15);
+    box-shadow: 0 4px 4px rgba(209, 105, 14, 0.4);
 }
 
 .nav{
@@ -16,6 +16,7 @@ header{
     font-weight: var(--font-semi);
     font-family: var(--header-font);
 }
+
 
 .nav .nav_logo{
     color: var(--text-color);
@@ -31,7 +32,7 @@ header{
 @media screen and (max-width: 768px){
     ul{
         position: fixed;
-        top: var(--header-height);
+        top: var(--header-height);  /* 3 rem */
         right: -100%;
         width: 50%;
         height: 100%;
@@ -75,7 +76,7 @@ header{
 
     ul li a:hover::after{
         width: 100%;
-        transition:width 0.3s ease-in-out;
+        transition:0.3s ease-in-out;
     }
 
     ul li.active{
@@ -92,12 +93,16 @@ header{
 
     ul{
         display: flex;
+        /* justify-content: center;
+        align-items: center; */
         padding-top: 0;
+        gap: 1rem;
     }
 
     ul li{
-        margin-left: var(--mb-6);
+        /* margin-left: var(--mb-6); */
         margin-bottom: 0;
+        
     }
 
     ul li a{
