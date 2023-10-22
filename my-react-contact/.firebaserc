@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "my-react-contact",
-    "my-react": "my-react-contact"
+    "my-react-site": "my-react-contact"
   },
   "targets": {},
   "etags": {}

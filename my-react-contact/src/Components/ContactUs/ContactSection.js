@@ -45,6 +45,7 @@ function ContactSection() {
       <h2 className="section_title">Contact Me</h2>
 
       <div className="contact_container bd_grid">
+        
         <form
           id="contact_form"
           className="contact_form"
